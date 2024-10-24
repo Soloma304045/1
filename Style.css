@@ -1,0 +1,102 @@
+body {
+    height: 97vh;
+    display: grid;
+    grid-template-areas: 
+        "logo header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 10px;
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header, nav, article, aside, footer {
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+header {
+    grid-area: header;
+    background-color: #4a772f;
+    display: grid;
+    place-items: center;
+}
+
+header h1 {
+    font-size: 44px;     
+    color: #fff;                
+    font-weight: bold;           
+}
+
+aside {
+    grid-area: logo;
+    background-color: #a1a128;
+}
+
+aside img {
+    max-height: 150px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+nav {
+    grid-area: nav;
+    background-color: #3c3c3c;
+    display: flex;
+    justify-content: center;           
+    gap: 20px;                              
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4a772f;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #6fa046;
+}
+
+article {
+    grid-area: main;
+    background-color: #222;
+    font-size: 20px; 
+    line-height: 1.6;
+    color: #fff;   
+    padding: 20px;  
+    overflow-y: auto;
+    scrollbar-color: #222 #3c3c3c;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #3c3c3c;
+    display: flex;    
+    align-items: center;         
+    gap: 20px;                         
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4a772f;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+footer a:hover {
+    background-color: #6fa046;
+}
+
+footer h2 {
+    font-size: 24px;                
+    margin: 0;                 
+    text-align: center;        
+}
